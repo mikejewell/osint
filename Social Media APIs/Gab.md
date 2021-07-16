@@ -6,31 +6,6 @@ An `Authorization` header is required, with `Bearer <token>` (where token is you
 
 #### Account
 
-#### Get an account by username
-`GET https://gab.com/api/v1/account_by_username/MatthewTrump`
-Response: A single Account
-
-##### Get an account by ID
-`GET https://gab.com/api/v1/accounts/73820`
-Response: A single Account
-
-##### Get followings / followers
-`GET https://gab.com/api/v1/accounts/2891614/[following|followers]`
-Response: An array of Accounts
-
-##### Get statuses
-`GET https://gab.com/api/v1/accounts/2891614/statuses?pinned=[true|false]&exclude_replies=[true|false]&only_media=[true|false]&limit=20&media_type=[photo|video]&max_id=id`
-
-Options:
-- pinned: only include pinned statuses
-- exclude_replies: don't include replies
-- only_media: only include replies with 'media_attachments' sections
-- media_type: filter to the specific media type
-- limit: only return N statuses
-- max_id: appears to start at the given ID
-
-Response: An array of Status
-
 ```json
 {
 	"id": "73820",
@@ -59,10 +34,33 @@ Response: An array of Status
 }
 ```
 
-#### Status
 
-##### Get a single status
-`GET https://gab.com/api/v1/statuses/106557617192553453`
+#### Get an account by username
+`GET https://gab.com/api/v1/account_by_username/MatthewTrump`
+Response: A single Account
+
+##### Get an account by ID
+`GET https://gab.com/api/v1/accounts/73820`
+Response: A single Account
+
+##### Get followings / followers
+`GET https://gab.com/api/v1/accounts/2891614/[following|followers]`
+Response: An array of Accounts
+
+##### Get statuses
+`GET https://gab.com/api/v1/accounts/2891614/statuses?pinned=[true|false]&exclude_replies=[true|false]&only_media=[true|false]&limit=20&media_type=[photo|video]&max_id=id`
+
+Options:
+- pinned: only include pinned statuses
+- exclude_replies: don't include replies
+- only_media: only include replies with 'media_attachments' sections
+- media_type: filter to the specific media type
+- limit: only return N statuses
+- max_id: appears to start at the given ID
+
+Response: An array of Status
+
+#### Status
 
 ```json
 {
@@ -147,12 +145,10 @@ Response: An array of Status
 }
 ```
 
+##### Get a single status
+`GET https://gab.com/api/v1/statuses/106557617192553453`
 
 #### Group
-
-##### Get a single group
-`GET https://gab.com/api/v1/groups/981`
-
 
 ```json
 {
@@ -175,8 +171,10 @@ Response: An array of Status
 }
 ```
 
-#### Search
+##### Get a single group
+`GET https://gab.com/api/v1/groups/981`
 
+#### Search
 `GET https://gab.com/api/v2/search?onlyVerified=[true|false]&q=trump&resolve=[true|false]`
 
 Options:

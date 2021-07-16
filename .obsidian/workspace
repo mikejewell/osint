@@ -10,7 +10,7 @@
           "type": "markdown",
           "state": {
             "file": "Social Media APIs/Gab.md",
-            "mode": "source"
+            "mode": "preview"
           }
         }
       }
@@ -83,7 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 306
   },
   "active": "2d74ef18f5dae581",
   "lastOpenFiles": [
