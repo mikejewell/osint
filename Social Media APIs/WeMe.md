@@ -45,10 +45,12 @@
 
 #### Get user info given username
 `GET https://mewe.com/api/v2/mycontacts/user?inviteId=markweinstein2`
+
 Response: User
 
 #### Get user info given ID
 `GET https://mewe.com/api/v2/mycontacts/user/5602c780e4b08f388c897a39`
+
 Response: User
 
 #### Get profile image for a user
@@ -138,6 +140,7 @@ Response: User
 
 #### Get posts for a group (optionally filtered by member):
 `GET https://mewe.com/api/v3/group/55f9dd29e4b050c69e693558/[member/5602c780e4b08f388c897a39/]postsfeed`
+
 Response:
 ```json
 {
@@ -159,6 +162,7 @@ Response:
 ### Search
 
 `GET https://mewe.com/api/v3/desktop/search?query=trump`
+
 Response:
 ```json
 {
