@@ -143,18 +143,6 @@ Response:
 }
 ```
 
-##### Get User Feed
-`GET https://api.gapo.vn/main/v1.4/feed/user/12345?expand=comments&from_id&limit=10&next=`
-
-```json
-{
-	"data": [Post],
-	"links": {
-		"next": "?from_id=qhxno1cyu7tv"
-	}
-}
-
-```
 
 #### Posts
 ```json
@@ -253,6 +241,34 @@ Response:
 }
 ```
 
+
+##### Get User Posts
+`GET https://api.gapo.vn/main/v1.4/feed/user/12345?expand=comments&from_id&limit=10&next=`
+
+```json
+{
+	"data": [Post],
+	"links": {
+		"next": "?from_id=qhxno1cyu7tv"
+	}
+}
+
+```
+
+###### Get User Photos
+`GET https://api.gapo.vn/main/v1.4/feed/user-photo?user_id=21387`
+```json
+{
+	"data": [Post],
+	"links": {
+		"next": "?from_id=qhxno1cyu7tv"
+	}
+}
+
+```
+
+
+
 #### Pages
 ```json
 {
@@ -349,6 +365,10 @@ Response:
 	"data": Group
 }
 ```
+
+Get group members:
+`GET `
+
 #### Search
 
 Search for users:
