@@ -146,6 +146,12 @@ Response:
 ##### Get User Feed
 `GET https://api.gapo.vn/main/v1.4/feed/user/12345?expand=comments&from_id&limit=10&next=`
 
+#### Posts
+
+Get post reactions:
+`GET https://api.gapo.vn/react/v3.0/post/list-user-react/qozo38gi3`
+Response:
+
 
 #### Pages
 ```json
@@ -185,6 +191,14 @@ Response:
 }
 ```
 
+Get page:
+`GET https://api.gapo.vn/page/v1.1/pages/1774723903168544996`
+Response:
+```json
+{
+	"data": Page
+}
+``
 #### Groups
 ```json
 {
@@ -224,6 +238,14 @@ Response:
 }
 ```
 
+Get group:
+`GET https://api.gapo.vn/group/v1.1/groups/2352381379997745152`
+Response:
+```json
+{
+	"data": Group
+}
+```
 #### Search
 
 Search for users:
