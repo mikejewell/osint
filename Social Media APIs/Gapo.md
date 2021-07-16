@@ -29,9 +29,111 @@ if __name__ == "__main__":
 
 #### Accounts
 
-##### Get User Profile
-GET https://api.gapo.vn/user-profile/v1.0/profile/21387
+```json
+{
+	"user_id": 12345,
+	"full_name": "Joe Bloggs",
+	"display_name": "Joe",
+	"gender": {
+		"gender": 1,
+		"privacy": 1
+	},
+	"cover": "https://image-5.gapo.vn/images/9f0efc3b-7130-4cd3-92c0-c9f12da0ef6c.jpeg",
+	"avatar": "https://image-5.gapo.vn/images/fc034ca7-de12-4987-9506-cceade29e4e3.jpeg",
+	"birthday": {},
+	"social_links": {
+		"facebook": "158188511978953",
+		"instagram": "",
+		"tiktok": "",
+		"youtube": ""
+	},
+	"featured_media": {
+		"photos": [],
+		"posts": [],
+		"stories": []
+	},
+	"status_kyc": 3,
+	"status_verify": 0,
+	"count": {
+		"post_count": 872,
+		"react_count": 586494,
+		"share_count": 0,
+		"friend_count": 4014,
+		"follow_count": 6446
+	},
+	"info": {
+		"website": "",
+		"address": {
+			"hometown": {
+				"city": 58,
+				"privacy": 1
+			},
+			"current": {
+				"city": 58,
+				"privacy": 1
+			}
+		},
+		"relationship": {
+			"title": "Độc thân",
+			"privacy": 1
+		},
+		"education": [{
+			"school": "THPT Phạm Thành Trung",
+			"title": "",
+			"privacy": 1
+		}],
+		"work": [{
+			"company": "ⓖⓐⓟⓞ",
+			"title": "Fan",
+			"privacy": 1
+		}],
+		"bio": "Kết bạn em nha 😍 \nSự cố gắng luôn được đền đáp xứng đáng"
+	},
+	"interest": [
+		29,
+		104,
+		106
+	],
+	"hobbies": [{
+		"id": 4,
+		"title": "Ăn uống",
+		"icon": "https://image-1.gapo.vn/images/e564e836-d89d-4e7c-8907-7a400fb1f9e1.png"
+	}, ...],
+	"link_profile": "tvt21387",
+	"cover_data": {
+		"id": "3a9df71f-b742-497a-b490-7b7e4bc35ee2",
+		"src": "https://image-5.gapo.vn/images/9f0efc3b-7130-4cd3-92c0-c9f12da0ef6c.jpeg",
+		"width": 1242,
+		"height": 558,
+		"src_thumb_pattern": "https://cdn-thumb-image-5.gapo.vn/$size$/smart/9f0efc3b-7130-4cd3-92c0-c9f12da0ef6c.jpeg"
+	},
+	"avatar_data": {
+		"id": "1e1f8f6a-d765-4ddc-83e8-ca032f679c9a",
+		"src": "https://image-5.gapo.vn/images/fc034ca7-de12-4987-9506-cceade29e4e3.jpeg",
+		"width": 2048,
+		"height": 2048,
+		"src_thumb_pattern": "https://cdn-thumb-image-5.gapo.vn/$size$/smart/fc034ca7-de12-4987-9506-cceade29e4e3.jpeg"
+	},
+	"background": {
+		"src": "",
+		"width": 0,
+		"height": 0,
+		"src_thumb_pattern": ""
+	},
+	"workspace_account": 0,
+	"avatar_thumb_pattern": "https://cdn-thumb-image-5.gapo.vn/$size$/smart/fc034ca7-de12-4987-9506-cceade29e4e3.jpeg",
+	"cover_thumb_pattern": "https://cdn-thumb-image-5.gapo.vn/$size$/smart/9f0efc3b-7130-4cd3-92c0-c9f12da0ef6c.jpeg",
+	"relation": "",
+	"see_first": 0,
+	"follow": 0,
+	"domain": "gapo.vn",
+	"link": "https://gapo.vn/tvt21387"
+}
 
+```
+
+##### Get User Profile
+`GET https://api.gapo.vn/user-profile/v1.0/profile/12345`
 Response:
 ```json
 {
@@ -43,8 +145,7 @@ Response:
 
 ##### Search Users
 
-GET https://api.gapo.vn/search/v2.0/search-user?q=football&page_number=1&limit=10
-
+`GET https://api.gapo.vn/search/v2.0/search-user?q=football&page_number=1&limit=10`
 Response:
 ```json
 {
@@ -54,151 +155,83 @@ Response:
 }
 ```
 
+
+## Pages
 ```json
 {
-    "user_id": 21387,
-    "full_name": "Trần Văn Tuấn",
-    "display_name": "Văn Tuấn",
-    "gender": {
-      "gender": 1,
-      "privacy": 1
-    },
-    "cover": "https://image-5.gapo.vn/images/9f0efc3b-7130-4cd3-92c0-c9f12da0ef6c.jpeg",
-    "avatar": "https://image-5.gapo.vn/images/fc034ca7-de12-4987-9506-cceade29e4e3.jpeg",
-    "birthday": {},
-    "social_links": {
-      "facebook": "158188511978953",
-      "instagram": "",
-      "tiktok": "",
-      "youtube": ""
-    },
-    "featured_media": {
-      "photos": [],
-      "posts": [],
-      "stories": []
-    },
-    "status_kyc": 3,
-    "status_verify": 0,
-    "count": {
-      "post_count": 872,
-      "react_count": 586494,
-      "share_count": 0,
-      "friend_count": 4014,
-      "follow_count": 6446
-    },
-    "info": {
-      "website": "",
-      "address": {
-        "hometown": {
-          "city": 58,
-          "privacy": 1
-        },
-        "current": {
-          "city": 58,
-          "privacy": 1
-        }
-      },
-      "relationship": {
-        "title": "Độc thân",
-        "privacy": 1
-      },
-      "education": [
-        {
-          "school": "THPT Phạm Thành Trung",
-          "title": "",
-          "privacy": 1
-        }
-      ],
-      "work": [
-        {
-          "company": "ⓖⓐⓟⓞ",
-          "title": "Fan",
-          "privacy": 1
-        }
-      ],
-      "bio": "Kết bạn em nha 😍 \nSự cố gắng luôn được đền đáp xứng đáng"
-    },
-    "interest": [
-      29,
-      104,
-      106
-    ],
-    "hobbies": [
-      {
-        "id": 4,
-        "title": "Ăn uống",
-        "icon": "https://image-1.gapo.vn/images/e564e836-d89d-4e7c-8907-7a400fb1f9e1.png"
-      },
-      {
-        "id": 5,
-        "title": "Nghe nhạc",
-        "icon": "https://image-1.gapo.vn/images/38f02ccd-7a94-4d04-930e-6cd318d63331.png"
-      },
-      {
-        "id": 8,
-        "title": "Vẽ",
-        "icon": "https://image-1.gapo.vn/images/8b340baa-d6f9-4e98-8897-4a0dd80ae567.png"
-      },
-      {
-        "id": 11,
-        "title": "Đọc sách",
-        "icon": "https://image-1.gapo.vn/images/b94b8136-9212-4c7e-a97d-86c5f2a34a6d.png"
-      },
-      {
-        "id": 16,
-        "title": "Nhiếp ảnh",
-        "icon": "https://image-1.gapo.vn/images/51a13724-839d-487f-be8f-886f59d5fb7b.png"
-      },
-      {
-        "id": 17,
-        "title": "Hoạt hình",
-        "icon": "https://image-1.gapo.vn/images/bd087f35-4635-4b6e-b73a-43fcde43e985.png"
-      },
-      {
-        "id": 24,
-        "title": "V-pop",
-        "icon": "https://image-1.gapo.vn/images/7844d421-8083-433d-a0e5-faa3ff300af3.png"
-      },
-      {
-        "id": 25,
-        "title": "K-pop",
-        "icon": "https://image-1.gapo.vn/images/9b5031db-532e-437c-8235-67ba86addee3.png"
-      },
-      {
-        "id": 28,
-        "title": "Đồ công nghệ",
-        "icon": "https://image-1.gapo.vn/images/7a9d2091-5b96-480c-ace0-0aa179af8a4e.png"
-      }
-    ],
-    "link_profile": "tvt21387",
-    "cover_data": {
-      "id": "3a9df71f-b742-497a-b490-7b7e4bc35ee2",
-      "src": "https://image-5.gapo.vn/images/9f0efc3b-7130-4cd3-92c0-c9f12da0ef6c.jpeg",
-      "width": 1242,
-      "height": 558,
-      "src_thumb_pattern": "https://cdn-thumb-image-5.gapo.vn/$size$/smart/9f0efc3b-7130-4cd3-92c0-c9f12da0ef6c.jpeg"
-    },
-    "avatar_data": {
-      "id": "1e1f8f6a-d765-4ddc-83e8-ca032f679c9a",
-      "src": "https://image-5.gapo.vn/images/fc034ca7-de12-4987-9506-cceade29e4e3.jpeg",
-      "width": 2048,
-      "height": 2048,
-      "src_thumb_pattern": "https://cdn-thumb-image-5.gapo.vn/$size$/smart/fc034ca7-de12-4987-9506-cceade29e4e3.jpeg"
-    },
-    "background": {
-      "src": "",
-      "width": 0,
-      "height": 0,
-      "src_thumb_pattern": ""
-    },
-    "workspace_account": 0,
-    "avatar_thumb_pattern": "https://cdn-thumb-image-5.gapo.vn/$size$/smart/fc034ca7-de12-4987-9506-cceade29e4e3.jpeg",
-    "cover_thumb_pattern": "https://cdn-thumb-image-5.gapo.vn/$size$/smart/9f0efc3b-7130-4cd3-92c0-c9f12da0ef6c.jpeg",
-    "relation": "",
-    "see_first": 0,
-    "follow": 0,
-    "domain": "gapo.vn",
-    "link": "https://gapo.vn/tvt21387"
-  }
+	"create_at": 1623682397795,
+	"last_update": 1623682451829,
+	"page_id": "1782757920457414464",
+	"title": "Football Credent",
+	"alias": "",
+	"description": "",
+	"info": "",
+	"type": 17,
+	"type_name": "Thể thao",
+	"avatar": "https://image-5.gapo.vn/images/dbb72e92-2745-4456-9671-bc7ba5864a87.jpeg",
+	"cover": "https://image-5.gapo.vn/images/202b112e-8765-4125-bcc0-d821d594f33e.jpeg",
+	"email": "",
+	"phone": "",
+	"website": "",
+	"status": 1,
+	"page_status": 1,
+	"status_verify": 0,
+	"province": 0,
+	"labels": [],
+	"background": {
+		"src_thumb_pattern": "",
+		"src": "",
+		"width": 0,
+		"height": 0,
+		"position": 0,
+		"media_id": ""
+	},
+	"is_like": 0,
+	"see_first": 0,
+	"follow_count": 0,
+	"avatar_thumb_pattern": "https://cdn-thumb-image-5.gapo.vn/$size$/smart/dbb72e92-2745-4456-9671-bc7ba5864a87.jpeg",
+	"cover_thumb_pattern": "https://cdn-thumb-image-5.gapo.vn/$size$/smart/202b112e-8765-4125-bcc0-d821d594f33e.jpeg"
+}
+```
 
+
+https://api.gapo.vn/search/v2.0/search-page?q=football&page_number=1&limit=10
+https://api.gapo.vn/search/v2.0/search-group?q=football&page_number=1&limit=10
+## Groups
+```json
+{
+      "id": "2352381379997745152",
+      "name": "DLS FOOTBALL GANE",
+      "description": "Dành cho những ai đam mê DLS mobile",
+      "privacy": "PUBLIC",
+      "owner_id": "1180326917",
+      "cover": "",
+      "cover_thumb_pattern": "",
+      "member_count": "1",
+      "blocked": false,
+      "created_at": "1597600195",
+      "discoverability": "VISIBLE",
+      "post_need_approve": false,
+      "current_user_status": "GUEST",
+      "alias": "",
+      "is_hot": false,
+      "approve_requests": "Auto",
+      "hidden_managers": false,
+      "background_image": "",
+      "has_rules": false,
+      "background_position": 0,
+      "labels": [],
+      "current_user_joined_at": "0",
+      "score": 0,
+      "total_post": "0",
+      "preview_members": [],
+      "current_member": {
+        "user_id": "",
+        "role": ""
+      },
+      "premium_status": "Free",
+      "workspace_group": false,
+      "workspace_id": "",
+      "workspace_name": ""
+}
 ```
