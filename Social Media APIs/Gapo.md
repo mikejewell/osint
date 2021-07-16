@@ -147,6 +147,81 @@ Response:
 `GET https://api.gapo.vn/main/v1.4/feed/user/12345?expand=comments&from_id&limit=10&next=`
 
 #### Posts
+```json
+{
+	"id": "qsgh7bcyu7tv",
+	"title": "",
+	"content": "Nếu có thể,chúng ta trở lại như Ngày xưa được không?\nNgày đầu anh và em từng yêu,nhau bênh nhau ấy !!!",
+	"mention": [],
+	"status": 1,
+	"create_time": 1619918615,
+	"update_time": 1619918615,
+	"post_type": 2,
+	"target": "user:784110883",
+	"privacy": 1,
+	"mediaData": [{
+		"type": "image",
+		"image_id": "fd128682-a367-46f3-a5b2-bd0376c3d17f",
+		"store": "image-5.gapo.vn",
+		"path": "images/fd128682-a367-46f3-a5b2-bd0376c3d17f.jpeg",
+		"src": "https://image-5.gapo.vn/images/fd128682-a367-46f3-a5b2-bd0376c3d17f.jpeg",
+		"thumb_pattern": "https://cdn-thumb-image-5.gapo.vn/$size$/smart/fd128682-a367-46f3-a5b2-bd0376c3d17f.jpeg",
+		"width": 1534,
+		"height": 2048
+	}],
+	"comments": [{
+		"id": "qsgpctkgotzf",
+		"post_id": "qsgh7bcyu7tv",
+		"parent_id": "0",
+		"content": "Trong cuộc đời đừng bao giờ ghĩ tới điều giá như hay nếu như. Nếu có dc như vậy thì cuộc sống chả có gì goi là vấp ngã",
+		"mention": [],
+		"mediaData": [],
+		"status": 1,
+		"counts": {
+			"reply_count": 1,
+			"react_count": 1
+		},
+		"create_time": 1619929181,
+		"update_time": null,
+		"comment_as": "user:1237355979",
+		"user": User,
+		"react_count": {
+			"react_type_1": 1,
+			"react_type_2": 0,
+			"react_type_3": 0,
+			"react_type_4": 0,
+			"react_type_5": 0,
+			"react_type_6": 0,
+			"react_type_7": 0,
+			"react_type_8": 0,
+			"react_type_9": 0,
+			"react_type_10": 0,
+			"react_type_11": 0
+		}
+	}],
+	"counts": {
+		"comment_count": 2,
+		"view_count": 19,
+		"share_count": 0,
+		"react_count": 15
+	},
+	"user": User,
+	"react_count": {
+		"react_type_1": 13,
+		"react_type_2": 1,
+		"react_type_3": 1,
+		"react_type_4": 0,
+		"react_type_5": 0,
+		"react_type_6": 0,
+		"react_type_7": 0,
+		"react_type_8": 0,
+		"react_type_9": 0,
+		"react_type_10": 0,
+		"react_type_11": 0
+	},
+	"react_status": 0
+}
+```
 
 Get post reactions:
 `GET https://api.gapo.vn/react/v3.0/post/list-user-react/qozo38gi3`
