@@ -47,31 +47,6 @@ Response: A single Account
 `GET https://gab.com/api/v1/accounts/2891614/[following|followers]`
 Response: An array of Accounts
 
-##### Get statuses
-`GET https://gab.com/api/v1/accounts/2891614/statuses?pinned=[true|false]&exclude_replies=[true|false]&only_media=[true|false]&limit=20&media_type=[photo|video]&max_id=id`
-
-Options:
-- pinned: only include pinned statuses
-- exclude_replies: don't include replies
-- only_media: only include replies with 'media_attachments' sections
-- media_type: filter to the specific media type
-- limit: only return N statuses
-- max_id: appears to start at the given ID
-
-Response: An array of Status
-
-##### Get comments for a status
-`GET https://gab.com/api/v1/statuses/106557617192553453/comments`
-
-Response:
-```json
-{
-	"ancestors":null, // tbc
-	"descendants":[Status]
-}
-```
-
-
 #### Statuses
 
 ```json
@@ -157,8 +132,34 @@ Response:
 }
 ```
 
+##### Get statuses for an account
+`GET https://gab.com/api/v1/accounts/2891614/statuses?pinned=[true|false]&exclude_replies=[true|false]&only_media=[true|false]&limit=20&media_type=[photo|video]&max_id=id`
+
+Options:
+- pinned: only include pinned statuses
+- exclude_replies: don't include replies
+- only_media: only include replies with 'media_attachments' sections
+- media_type: filter to the specific media type
+- limit: only return N statuses
+- max_id: appears to start at the given ID
+
+Response: An array of Statuses
+
 ##### Get a single status
 `GET https://gab.com/api/v1/statuses/106557617192553453`
+
+##### Get comments for a status
+`GET https://gab.com/api/v1/statuses/106557617192553453/comments`
+
+Response:
+```json
+{
+	"ancestors":null, // tbc
+	"descendants":[Status]
+}
+```
+
+
 
 #### Groups
 
