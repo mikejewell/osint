@@ -1,0 +1,95 @@
+{
+  "main": {
+    "id": "25fb09d50093e32a",
+    "type": "split",
+    "children": [
+      {
+        "id": "2d74ef18f5dae581",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Social Media APIs/Gab.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "7c12ba1cf8fe9443",
+    "type": "split",
+    "children": [
+      {
+        "id": "54b3567c02c7d673",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "426fea5ae5df139b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "0d4295d3804ce3f7",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "5bbf6a462772debc",
+    "type": "split",
+    "children": [
+      {
+        "id": "1c2faef70380eb0d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1749c4d7fc1bbfbc",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Social Media APIs/Gab.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "active": "2d74ef18f5dae581",
+  "lastOpenFiles": [
+    "Social Media APIs/Gab.md",
+    "Sock Puppets.md",
+    "README.md",
+    "Untitled.md"
+  ]
+}
