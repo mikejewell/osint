@@ -32,10 +32,30 @@ if __name__ == "__main__":
 ##### Get User Profile
 GET https://api.gapo.vn/user-profile/v1.0/profile/21387
 
+Response:
 ```json
 {
-  "code": 200,
-  "data": {
+	"code": 200,
+	"data": User,
+	"message": "Ok"
+}
+```
+
+##### Search Users
+
+GET https://api.gapo.vn/search/v2.0/search-user?q=football&page_number=1&limit=10
+
+Response:
+```json
+{
+	"code": 200,
+	"message": "Đã xử lý thành công!", // Successfully processed!
+	"data": [User]
+}
+```
+
+```json
+{
     "user_id": 21387,
     "full_name": "Trần Văn Tuấn",
     "display_name": "Văn Tuấn",
@@ -179,8 +199,6 @@ GET https://api.gapo.vn/user-profile/v1.0/profile/21387
     "follow": 0,
     "domain": "gapo.vn",
     "link": "https://gapo.vn/tvt21387"
-  },
-  "message": "Ok"
-}
+  }
 
 ```
