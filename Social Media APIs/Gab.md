@@ -37,7 +37,7 @@ An `Authorization` header is required, with `Bearer <token>` (where token is you
 ```
 
 
-### Get an account by username
+#### Get an account by username
 `GET https://gab.com/api/v1/account_by_username/MatthewTrump`
 Response: A single Account
 
