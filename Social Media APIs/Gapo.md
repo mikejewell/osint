@@ -27,7 +27,7 @@ if __name__ == "__main__":
 
 ```
 
-#### Accounts
+#### Users
 
 ```json
 {
@@ -143,20 +143,11 @@ Response:
 }
 ```
 
-##### Search Users
-
-`GET https://api.gapo.vn/search/v2.0/search-user?q=football&page_number=1&limit=10`
-Response:
-```json
-{
-	"code": 200,
-	"message": "Đã xử lý thành công!", // Successfully processed!
-	"data": [User]
-}
-```
+##### Get User Feed
+`GET https://api.gapo.vn/main/v1.4/feed/user/12345?expand=comments&from_id&limit=10&next=`
 
 
-## Pages
+#### Pages
 ```json
 {
 	"create_at": 1623682397795,
@@ -194,44 +185,94 @@ Response:
 }
 ```
 
-
-https://api.gapo.vn/search/v2.0/search-page?q=football&page_number=1&limit=10
-https://api.gapo.vn/search/v2.0/search-group?q=football&page_number=1&limit=10
-## Groups
+#### Groups
 ```json
 {
-      "id": "2352381379997745152",
-      "name": "DLS FOOTBALL GANE",
-      "description": "Dành cho những ai đam mê DLS mobile",
-      "privacy": "PUBLIC",
-      "owner_id": "1180326917",
-      "cover": "",
-      "cover_thumb_pattern": "",
-      "member_count": "1",
-      "blocked": false,
-      "created_at": "1597600195",
-      "discoverability": "VISIBLE",
-      "post_need_approve": false,
-      "current_user_status": "GUEST",
-      "alias": "",
-      "is_hot": false,
-      "approve_requests": "Auto",
-      "hidden_managers": false,
-      "background_image": "",
-      "has_rules": false,
-      "background_position": 0,
-      "labels": [],
-      "current_user_joined_at": "0",
-      "score": 0,
-      "total_post": "0",
-      "preview_members": [],
-      "current_member": {
-        "user_id": "",
-        "role": ""
-      },
-      "premium_status": "Free",
-      "workspace_group": false,
-      "workspace_id": "",
-      "workspace_name": ""
+	"id": "2352381379997745152",
+	"name": "DLS FOOTBALL GANE",
+	"description": "Dành cho những ai đam mê DLS mobile",
+	"privacy": "PUBLIC",
+	"owner_id": "1180326917",
+	"cover": "",
+	"cover_thumb_pattern": "",
+	"member_count": "1",
+	"blocked": false,
+	"created_at": "1597600195",
+	"discoverability": "VISIBLE",
+	"post_need_approve": false,
+	"current_user_status": "GUEST",
+	"alias": "",
+	"is_hot": false,
+	"approve_requests": "Auto",
+	"hidden_managers": false,
+	"background_image": "",
+	"has_rules": false,
+	"background_position": 0,
+	"labels": [],
+	"current_user_joined_at": "0",
+	"score": 0,
+	"total_post": "0",
+	"preview_members": [],
+	"current_member": {
+		"user_id": "",
+		"role": ""
+	},
+	"premium_status": "Free",
+	"workspace_group": false,
+	"workspace_id": "",
+	"workspace_name": ""
 }
 ```
+
+#### Search
+
+Search for users:
+`GET https://api.gapo.vn/search/v2.0/search-user?q=joe&page_number=1&limit=10`
+Response:
+```json
+{
+	"code": 200,
+	"message": "Đã xử lý thành công!", // Successfully processed!
+	"data": [User],
+	"links": {
+    	"next": "page_number=2&limit=10&q=joe",
+    	"prev": "",
+    	"total_pages": 500
+	}
+}
+```
+
+
+Search for groups:
+`GET https://api.gapo.vn/search/v2.0/search-group?q=football&page_number=1&limit=10`
+Response:
+```json
+{
+	"code": 200,
+	"message": "Đã xử lý thành công!", // Successfully processed!
+	"data": [Group],
+	"links": {
+    	"next": "page_number=2&limit=10&q=football",
+    	"prev": "",
+    	"total_pages": 500
+	}
+}
+```
+
+
+Search for pages:
+`GET https://api.gapo.vn/search/v2.0/search-page?q=football&page_number=1&limit=10`
+Response:
+```json
+{
+	"code": 200,
+	"message": "Đã xử lý thành công!", // Successfully processed!
+	"data": [Page],
+	"links": {
+    	"next": "page_number=2&limit=10&q=football",
+    	"prev": "",
+    	"total_pages": 500
+	}
+}
+```
+
