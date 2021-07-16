@@ -158,3 +158,26 @@ Response:
 
 ### Search
 
+`GET https://mewe.com/api/v3/desktop/search?query=trump`
+Response:
+```json
+{
+	"hasMoreResults": true,
+	"results": [
+		{ "user": User }, 
+		{ "group": Group },
+		{ "page": Page },
+		{ "post": Post }, 
+	],
+	"postsData": {
+		"users": [User],
+		"groups": [Group],
+		"pages": [Page]
+	},
+	"_links": {
+		"self": {
+			"href": "/api/v3/desktop/search"
+		}
+	}
+}
+```
