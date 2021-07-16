@@ -367,7 +367,32 @@ Response:
 ```
 
 Get group members:
-`GET `
+`GET https://api.gapo.vn/membership/v1.1/groups/2352381379997745152/members`
+Response:
+```json
+{
+	"total": 1,
+	"data": [User]
+	"links": {
+		"next": "",
+		"prev": ""
+	}
+}
+```
+
+Get group feed:
+`GET https://api.gapo.vn/main/v1.4/feed/group/2352381379997745152`
+Response:
+```json
+{
+	"data": [Post],
+	"links": {
+		"next": "?from_id=qhxno1cyu7tv"
+	}
+}
+
+```
+
 
 #### Search
 
