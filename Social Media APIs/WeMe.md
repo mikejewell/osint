@@ -13,14 +13,15 @@
 	"registeredAt": 1443022720,
 	"_links": {
 		"self": {
-			"href": "/api/v2/mycontacts/user/5602c780e4b08f388c897a39"
+			"href": "/api/v2/mycontacts/user"
 		},
 		"avatar": {
-			"href": "/api/v2/photo/profile/{imageSize}/5602c780e4b08f388c897a39?group=55f9dd29e4b050c69e693558&f=F1482297596208YCECRS",
+			"href": "/api/v2/photo/profile/{imageSize}/5602c780e4b08f388c897a39?group=&f=F1482297596208YCECRS",
 			"templated": true
 		},
 		"cover": {
-			"href": "/api/v2/photo/33lmUK9ccuyACpWDShh-lLNgXxPT_yKw26k9b9vxQyBbHtwjpA8wQ3gWsE4/{imageSize}/img.jpg"
+			"href": "/img/predefined/cover-picture.jpg",
+			"templated": true
 		}
 	},
 	"profile": {
@@ -30,7 +31,6 @@
 		"text": "",
 		"active": false
 	},
-	"groupRole": "Admin",
 	"canChat": false,
 	"canSeeContacts": false,
 	"userAllowsToBeInvited": false,
@@ -47,11 +47,11 @@
 `GET https://mewe.com/api/v2/mycontacts/user?inviteId=markweinstein2`
 Response: User
 
-##### Get user info given ID
+#### Get user info given ID
 `GET https://mewe.com/api/v2/mycontacts/user/5602c780e4b08f388c897a39`
 Response: User
 
-##### Get profile image for a user
+#### Get profile image for a user
 `GET https://img.mewe.com/api/v2/photo/profile/150x150/5602c780e4b08f388c897a39`
 `GET https://img.mewe.com/api/v2/photo/profile/400x400/5602c780e4b08f388c897a39`
 
@@ -114,48 +114,37 @@ Response: User
 
 ### Groups
 
-Get posts for a group (optionally filtered by member):
+```json
+{
+	"id": "55f9dd29e4b050c69e693558",
+	"name": "MeWe News and Updates",
+	"color": {
+		"defaultColor": "#2d2a82",
+		"light": "#7371ab",
+		"dark": "#000058",
+		"background": "#dcdbea"
+	},
+	"_links": {
+		"self": {
+			"href": "/api/v2/group/55f9dd29e4b050c69e693558"
+		},
+		"groupAvatar": {
+			"href": "/api/v2/photo/33lmUK9ccuyACpWDShh-lLNgXxPT_yKw26k9b9vxQyBbHtwjpA8wQ3gWsE4/{imageSize}/img?static={static}",
+			"templated": true
+		}
+	}
+}
+```
+
+#### Get posts for a group (optionally filtered by member):
 `GET https://mewe.com/api/v3/group/55f9dd29e4b050c69e693558/[member/5602c780e4b08f388c897a39/]postsfeed`
+Response:
 ```json
 {
 	"feed": [Post],
 	"order": "comment",
-	"users": [{
-		"id": "5602c780e4b08f388c897a39",
-		"name": "Mark Weinstein",
-		"_links": {
-			"avatar": {
-				"href": "/api/v2/photo/profile/{imageSize}/5602c780e4b08f388c897a39?group=55f9dd29e4b050c69e693558&f=F1482297596208YCECRS",
-				"templated": true
-			}
-		},
-		"fingerprint": "F1482297596208YCECRS",
-		"firstName": "Mark",
-		"lastName": "Weinstein",
-		"contactInviteId": "markweinstein2",
-		"badges": {
-			"verified": true
-		}
-	}],
-	"groups": [{
-		"id": "55f9dd29e4b050c69e693558",
-		"name": "MeWe News and Updates",
-		"color": {
-			"defaultColor": "#2d2a82",
-			"light": "#7371ab",
-			"dark": "#000058",
-			"background": "#dcdbea"
-		},
-		"_links": {
-			"self": {
-				"href": "/api/v2/group/55f9dd29e4b050c69e693558"
-			},
-			"groupAvatar": {
-				"href": "/api/v2/photo/33lmUK9ccuyACpWDShh-lLNgXxPT_yKw26k9b9vxQyBbHtwjpA8wQ3gWsE4/{imageSize}/img?static={static}",
-				"templated": true
-			}
-		}
-	}],
+	"users": [User],
+	"groups": [Group],
 	"_links": {
 		"self": {
 			"href": "/api/v3/group/55f9dd29e4b050c69e693558/member/5602c780e4b08f388c897a39/postsfeed"
@@ -166,4 +155,6 @@ Get posts for a group (optionally filtered by member):
 	}
 }
 ```
+
+### Search
 
