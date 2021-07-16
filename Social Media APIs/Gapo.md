@@ -151,7 +151,22 @@ Response:
 Get post reactions:
 `GET https://api.gapo.vn/react/v3.0/post/list-user-react/qozo38gi3`
 Response:
-
+```json
+{
+	"code": 0,
+	"data": [{
+		"user": User,
+		"react_type": 1,
+		"updated_at": 1614715051000,
+		"relation": ""
+	}],
+	"links": {
+		"next": "last_time=1614110434000",
+		"prev": "last_time=1614715051000"
+	},
+	"message": "Ok"
+}
+```
 
 #### Pages
 ```json
@@ -196,6 +211,8 @@ Get page:
 Response:
 ```json
 {
+	"code": 200,
+ 	"message": "Đã xử lý thành công!",
 	"data": Page
 }
 ``
