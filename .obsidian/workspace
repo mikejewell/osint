@@ -10,7 +10,7 @@
           "type": "markdown",
           "state": {
             "file": "Social Media APIs/Gab.md",
-            "mode": "source"
+            "mode": "preview"
           }
         }
       }
@@ -88,8 +88,9 @@
   "active": "2d74ef18f5dae581",
   "lastOpenFiles": [
     "Social Media APIs/Gab.md",
-    "Untitled.md",
+    "Miscellaneous.md",
     "Sock Puppets.md",
-    "README.md"
+    "README.md",
+    "Untitled.md"
   ]
 }
