@@ -60,6 +60,18 @@ Options:
 
 Response: An array of Status
 
+##### Get comments for a status
+`GET https://gab.com/api/v1/statuses/106557617192553453/comments`
+
+Response:
+```json
+{
+	"ancestors":null, // tbc
+	"descendants":[Status]
+}
+```
+
+
 #### Statuses
 
 ```json
@@ -173,57 +185,6 @@ Response: An array of Status
 
 ##### Get a single group
 `GET https://gab.com/api/v1/groups/981`
-
-#### Comments
-Note: The body of this is identical to a status, just with the `in_reply_to_id` and `in_reply_to_account_id` fields set.
-
-##### Get comments for a status
-`GET https://gab.com/api/v1/statuses/106557617192553453/comments`
-
-```json
-{
-	"id": "106587154782047214",
-	"created_at": "2021-07-15T23:15:11.609Z",
-	"revised_at": null,
-	"in_reply_to_id": "106587153253288081",
-	"in_reply_to_account_id": "3155503",
-	"sensitive": false,
-	"spoiler_text": "",
-	"visibility": "public",
-	"language": "en",
-	"uri": "/Jewel2089/posts/106587154782047214",
-	"url": "https://gab.com/Jewel2089/posts/106587154782047214",
-	"replies_count": 2,
-	"reblogs_count": 0,
-	"pinnable": false,
-	"pinnable_by_group": false,
-	"favourites_count": 1,
-	"quote_of_id": null,
-	"expires_at": null,
-	"has_quote": false,
-	"bookmark_collection_id": null,
-	"favourited": false,
-	"reblogged": false,
-	"content": "\u003ca href=\"https://gab.com/RealMarjorieGreene\" class=\"u-url mention\" rel=\"nofollow noopener noreferrer\" target=\"_blank\"\u003e@RealMarjorieGreene\u003c/a\u003e Planning for insurrection or what?",
-	"rich_content": "",
-	"plain_markdown": null,
-	"reblog": null,
-	"quote": null,
-	"account": User,
-	"group": null,
-	"media_attachments": [],
-	"mentions": [{
-		"id": "3155503",
-		"username": "RealMarjorieGreene",
-		"url": "https://gab.com/RealMarjorieGreene",
-		"acct": "RealMarjorieGreene"
-	}],
-	"tags": [],
-	"emojis": [],
-	"card": null,
-	"poll": null
-}
-```
 
 #### Search
 `GET https://gab.com/api/v2/search?onlyVerified=[true|false]&q=trump&resolve=[true|false]`
