@@ -1,10 +1,12 @@
 # Gab
 
-### Authentication
+## Authentication
 
 An `Authorization` header is required, with `Bearer <token>` (where token is your token).
 
-#### Accounts
+## API
+
+### Accounts
 
 ```json
 {
@@ -35,19 +37,19 @@ An `Authorization` header is required, with `Bearer <token>` (where token is you
 ```
 
 
-#### Get an account by username
+### Get an account by username
 `GET https://gab.com/api/v1/account_by_username/MatthewTrump`
 Response: A single Account
 
-##### Get an account by ID
+#### Get an account by ID
 `GET https://gab.com/api/v1/accounts/73820`
 Response: A single Account
 
-##### Get followings / followers
+#### Get followings / followers
 `GET https://gab.com/api/v1/accounts/2891614/[following|followers]`
 Response: An array of Accounts
 
-#### Statuses
+### Statuses
 
 ```json
 {
@@ -132,7 +134,7 @@ Response: An array of Accounts
 }
 ```
 
-##### Get statuses for an account
+#### Get statuses for an account
 `GET https://gab.com/api/v1/accounts/2891614/statuses?pinned=[true|false]&exclude_replies=[true|false]&only_media=[true|false]&limit=20&media_type=[photo|video]&max_id=id`
 
 Options:
@@ -145,10 +147,10 @@ Options:
 
 Response: An array of Statuses
 
-##### Get a single status
+#### Get a single status
 `GET https://gab.com/api/v1/statuses/106557617192553453`
 
-##### Get comments for a status
+#### Get comments for a status
 `GET https://gab.com/api/v1/statuses/106557617192553453/comments`
 
 Response:
@@ -159,9 +161,7 @@ Response:
 }
 ```
 
-
-
-#### Groups
+### Groups
 
 ```json
 {
@@ -184,10 +184,10 @@ Response:
 }
 ```
 
-##### Get a single group
+#### Get a single group
 `GET https://gab.com/api/v1/groups/981`
 
-#### Search
+### Search
 `GET https://gab.com/api/v2/search?onlyVerified=[true|false]&q=trump&resolve=[true|false]`
 
 Options:
