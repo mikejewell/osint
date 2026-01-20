@@ -99,7 +99,121 @@
         }
       ],
       "timestamp": "2026-01-20T21:03:51.808Z"
+    },
+    {
+      "id": "fe4f5eca-bbe7-4287-912b-d8cfce6de64d",
+      "role": "user",
+      "content": [
+        {
+          "type": "text_with_context",
+          "text": "Can you include links to the documents in that?",
+          "autoMentionContext": {
+            "noteName": "Repository Summary",
+            "notePath": "Repository Summary.md"
+          }
+        }
+      ],
+      "timestamp": "2026-01-20T21:07:06.039Z"
+    },
+    {
+      "id": "666040ae-0c5f-499e-971e-e5e2fd1b8bb2",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "\n\n"
+        }
+      ],
+      "timestamp": "2026-01-20T21:07:08.009Z"
+    },
+    {
+      "id": "efc6cbfe-8a0e-43e9-bd08-297567c94ca7",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "chatcmpl-tool-490efc3187f343cd8f90ffc97877cf4b",
+          "title": "Repository Summary.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "/Users/moj/Documents/osint/Repository Summary.md",
+              "newText": "## Markdown Files\n- [[README]] - Repository documentation\n- [[Sock Puppets]] - Information about sock puppet accounts\n- [[Miscellaneous]] - Miscellaneous OSINT information\n\n## Social Media APIs Directory\n- [[Facebook]] - Facebook API documentation\n- [[WeMe]] - WeMe API documentation\n- [[Gapo]] - Gapo API documentation\n- [[Gab]] - Gab API documentation",
+              "oldText": "## Markdown Files\n- **README.md** - Repository documentation\n- **Sock Puppets.md** - Information about sock puppet accounts\n- **Miscellaneous.md** - Miscellaneous OSINT information\n\n## Social Media APIs Directory\n- **Social Media APIs/Facebook.md** - Facebook API documentation\n- **Social Media APIs/WeMe.md** - WeMe API documentation\n- **Social Media APIs/Gapo.md** - Gapo API documentation\n- **Social Media APIs/Gab.md** - Gab API documentation"
+            }
+          ],
+          "locations": [
+            {
+              "path": "/Users/moj/Documents/osint/Repository Summary.md"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "\n\nUpdated the summary with Obsidian wiki-style links to all documents."
+        }
+      ],
+      "timestamp": "2026-01-20T21:07:12.325Z"
+    },
+    {
+      "id": "27fe1e59-1938-4053-af08-97ebfb4fd3a2",
+      "role": "user",
+      "content": [
+        {
+          "type": "text_with_context",
+          "text": "Can you not include the hidden files?",
+          "autoMentionContext": {
+            "noteName": "Repository Summary",
+            "notePath": "Repository Summary.md"
+          }
+        }
+      ],
+      "timestamp": "2026-01-20T21:07:30.356Z"
+    },
+    {
+      "id": "457dd0c4-c7ec-4409-93bc-7123b57d169e",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "\n\n"
+        }
+      ],
+      "timestamp": "2026-01-20T21:07:30.896Z"
+    },
+    {
+      "id": "5967f77b-cb5b-4103-acb7-52cde4371966",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "chatcmpl-tool-cc864fd92c8a4955a65e2b0b467740ed",
+          "title": "Repository Summary.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "/Users/moj/Documents/osint/Repository Summary.md",
+              "newText": "",
+              "oldText": "## Configuration Files\n- **.obsidian/** - Obsidian vault configuration\n  - Various plugin configurations and settings\n- **.git/** - Git repository metadata"
+            }
+          ],
+          "locations": [
+            {
+              "path": "/Users/moj/Documents/osint/Repository Summary.md"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "\n\nRemoved the hidden files section from the repository summary."
+        }
+      ],
+      "timestamp": "2026-01-20T21:07:31.844Z"
     }
   ],
-  "savedAt": "2026-01-20T21:03:53.197Z"
+  "savedAt": "2026-01-20T21:07:33.285Z"
 }
