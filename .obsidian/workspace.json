@@ -136,11 +136,13 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "templates:Insert template": false,
       "obsidian42-brat:BRAT": false,
-      "agent-client:Open agent client": false
+      "agent-client:Open agent client": false,
+      "bbawj-semantic-search:Semantic Search": false
     }
   },
   "active": "afbd4689d44aa6dc",
   "lastOpenFiles": [
+    "input.csv",
     "Sock Puppets.md",
     "Repository Summary.md",
     "Social Media APIs/Facebook.md",
