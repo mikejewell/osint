@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Templates/person.md",
+                "file": "Miscellaneous.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "person"
+              "title": "Miscellaneous"
             }
           }
         ]
@@ -125,14 +125,15 @@
       "templates:Insert template": false
     }
   },
-  "active": "9324b14f2067ac00",
+  "active": "d7ae707a307723e2",
   "lastOpenFiles": [
+    "Sock Puppets.md",
+    "Templates/person.md",
     "Social Media APIs/WeMe.md",
     "Social Media APIs/Gapo.md",
     "Social Media APIs/Gab.md",
     "Investigations/Obitayo/People/Andreas Olosegun Obitayo.md",
     "Investigations/Obitayo/Locations",
-    "Templates/person.md",
     "Investigations/Obitayo/People",
     "Investigations/Obitayo/Andreas Olusegun Obitayo.md",
     "Templates",
