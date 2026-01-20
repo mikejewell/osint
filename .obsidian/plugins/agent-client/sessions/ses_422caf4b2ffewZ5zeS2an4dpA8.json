@@ -1,0 +1,318 @@
+{
+  "version": 1,
+  "sessionId": "ses_422caf4b2ffewZ5zeS2an4dpA8",
+  "agentId": "opencode",
+  "messages": [
+    {
+      "id": "40a3d152-04af-4673-a8a3-605f94e39368",
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "Can you hear me?"
+        }
+      ],
+      "timestamp": "2026-01-20T21:00:05.329Z"
+    },
+    {
+      "id": "072f674e-5722-4c96-a39a-0790f72d782f",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "\n\nYes, I can hear you. How can I help you today?"
+        }
+      ],
+      "timestamp": "2026-01-20T21:00:08.712Z"
+    },
+    {
+      "id": "9bdeea66-0817-4278-8dad-7e882bb8671b",
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "Can you create a new note for the Facebook API?"
+        }
+      ],
+      "timestamp": "2026-01-20T21:00:28.406Z"
+    },
+    {
+      "id": "f2679b73-e090-4e64-a352-bcc088ced050",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "\n\nI'll create a new note for the Facebook API. Let me first check the current directory structure to understand where notes are stored.\n"
+        }
+      ],
+      "timestamp": "2026-01-20T21:00:29.242Z"
+    },
+    {
+      "id": "3004d9c5-1709-437c-a0ec-42b0c64cfe61",
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "They go in Social Media APIs"
+        }
+      ],
+      "timestamp": "2026-01-20T21:01:32.372Z"
+    },
+    {
+      "id": "2caaface-0855-4156-8f2e-45d45d0b5236",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "\n\n"
+        }
+      ],
+      "timestamp": "2026-01-20T21:01:33.260Z"
+    },
+    {
+      "id": "29050736-9792-400c-ace6-ec7a4395c2af",
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "Can you create a note called Hello?"
+        }
+      ],
+      "timestamp": "2026-01-20T21:01:44.962Z"
+    },
+    {
+      "id": "cf41a15f-a99e-4b79-be78-01289e241844",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "\n\nI'll create a note called \"Hello\" in the Social Media APIs directory.\n"
+        }
+      ],
+      "timestamp": "2026-01-20T21:01:45.621Z"
+    },
+    {
+      "id": "10726923-3cfc-4a32-8dd8-fb169540a5b0",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "chatcmpl-tool-96e6e2caa14a401a915720fd1dbbc080",
+          "title": "Social Media APIs/Hello.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "/Users/moj/Documents/osint/Social Media APIs/Hello.md",
+              "newText": "Hello",
+              "oldText": ""
+            }
+          ],
+          "locations": [
+            {
+              "path": "/Users/moj/Documents/osint/Social Media APIs/Hello.md"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "\n\nCreated \"Hello.md\" in the Social Media APIs directory."
+        }
+      ],
+      "timestamp": "2026-01-20T21:01:46.250Z"
+    },
+    {
+      "id": "a7a53502-2136-4a13-aa11-22baa80bdfa9",
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "Can you add a template similar to the other files in there that I can fill out?"
+        }
+      ],
+      "timestamp": "2026-01-20T21:02:01.321Z"
+    },
+    {
+      "id": "c4827f48-366f-4d26-8201-ba4efc757221",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "\n\nI'll first check the existing files in the Social Media APIs directory to see what templates are being used, then update the Hello.md file with a similar template.\n"
+        }
+      ],
+      "timestamp": "2026-01-20T21:02:01.872Z"
+    },
+    {
+      "id": "9b1364a5-63c3-4fd3-aa22-53817f5988d5",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "chatcmpl-tool-7f45d000fc884960844facc5638cac8c",
+          "title": "",
+          "status": "completed",
+          "kind": "search",
+          "content": [],
+          "locations": []
+        },
+        {
+          "type": "text",
+          "text": "\n\n"
+        }
+      ],
+      "timestamp": "2026-01-20T21:02:02.315Z"
+    },
+    {
+      "id": "2b93b6f1-978e-4cc2-a3d5-3fa3e0c8794a",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "chatcmpl-tool-a84aa939aea24377a6da06f6e9ee33f8",
+          "title": "Social Media APIs/Gab.md",
+          "status": "completed",
+          "kind": "read",
+          "content": [],
+          "locations": [
+            {
+              "path": "/Users/moj/Documents/osint/Social Media APIs/Gab.md"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "\n"
+        }
+      ],
+      "timestamp": "2026-01-20T21:02:04.186Z"
+    },
+    {
+      "id": "2dd28155-7318-4f4a-8467-110935ecb4eb",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "chatcmpl-tool-a05fcc44e54a44d880dd165aa62af931",
+          "title": "Social Media APIs/Gapo.md",
+          "status": "completed",
+          "kind": "read",
+          "content": [],
+          "locations": [
+            {
+              "path": "/Users/moj/Documents/osint/Social Media APIs/Gapo.md"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "\n"
+        }
+      ],
+      "timestamp": "2026-01-20T21:02:04.601Z"
+    },
+    {
+      "id": "db662647-a75f-4c05-9660-fbeb5eda646f",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "chatcmpl-tool-6a26ca51f3734efbb3e79583b7e6f556",
+          "title": "Social Media APIs/WeMe.md",
+          "status": "completed",
+          "kind": "read",
+          "content": [],
+          "locations": [
+            {
+              "path": "/Users/moj/Documents/osint/Social Media APIs/WeMe.md"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "\n\n"
+        }
+      ],
+      "timestamp": "2026-01-20T21:02:06.231Z"
+    },
+    {
+      "id": "dda8ae7a-ed10-4194-8024-077fda253fa8",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "chatcmpl-tool-7b730205f7704d7784637bedbbb95807",
+          "title": "Social Media APIs/Hello.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "/Users/moj/Documents/osint/Social Media APIs/Hello.md",
+              "newText": "# Hello\n\n## Authentication\n\n[Authentication details here]\n\n## API\n\n### [Entity Type]\n\n```json\n{\n\t// JSON structure here\n}\n```\n\n#### [Endpoint Description]\n`GET [URL]`\n\nResponse: [Description]\n\n### [Additional Sections]\n\n[Add more sections as needed]",
+              "oldText": "Hello"
+            }
+          ],
+          "locations": [
+            {
+              "path": "/Users/moj/Documents/osint/Social Media APIs/Hello.md"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "\n\nUpdated Hello.md with a template based on the other files in the directory. You can now fill in the specific Facebook API details."
+        }
+      ],
+      "timestamp": "2026-01-20T21:02:09.396Z"
+    },
+    {
+      "id": "12db7c27-bc37-43a3-90d1-b48226853a7b",
+      "role": "user",
+      "content": [
+        {
+          "type": "text_with_context",
+          "text": "Can you rename it to Facebook?",
+          "autoMentionContext": {
+            "noteName": "Hello",
+            "notePath": "Social Media APIs/Hello.md"
+          }
+        }
+      ],
+      "timestamp": "2026-01-20T21:02:23.463Z"
+    },
+    {
+      "id": "7d32e87c-041b-4bc9-bd6e-6d68e92690cd",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "\n\n"
+        }
+      ],
+      "timestamp": "2026-01-20T21:02:25.083Z"
+    },
+    {
+      "id": "48414c67-55d6-4f45-9592-286ad9bdd7c4",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "chatcmpl-tool-d6a7bd2e2093435d841c58043d94d1e3",
+          "title": "Rename Hello.md to Facebook.md",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "locations": []
+        },
+        {
+          "type": "text",
+          "text": "\n\nRenamed Hello.md to Facebook.md."
+        }
+      ],
+      "timestamp": "2026-01-20T21:02:25.814Z"
+    }
+  ],
+  "savedAt": "2026-01-20T21:02:27.568Z"
+}

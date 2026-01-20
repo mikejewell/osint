@@ -34,6 +34,13 @@
         "acp"
       ],
       "env": []
+    },
+    {
+      "id": "custom-agent",
+      "displayName": "Custom agent",
+      "command": "",
+      "args": [],
+      "env": []
     }
   ],
   "defaultAgentId": "claude-code-acp",
@@ -62,5 +69,22 @@
     "maxSelectionLength": 10000,
     "showEmojis": true
   },
-  "savedSessions": []
+  "savedSessions": [
+    {
+      "sessionId": "ses_422c7ca20ffeUMgy5wp4HB99rw",
+      "agentId": "opencode",
+      "cwd": "/Users/moj/Documents/osint",
+      "title": "Can you create a note in the root that summarises ...",
+      "createdAt": "2026-01-20T21:03:53.190Z",
+      "updatedAt": "2026-01-20T21:03:53.190Z"
+    },
+    {
+      "sessionId": "ses_422caf4b2ffewZ5zeS2an4dpA8",
+      "agentId": "opencode",
+      "cwd": "/Users/moj/Documents/osint",
+      "title": "Can you hear me?",
+      "createdAt": "2026-01-20T21:00:09.194Z",
+      "updatedAt": "2026-01-20T21:00:09.194Z"
+    }
+  ]
 }
