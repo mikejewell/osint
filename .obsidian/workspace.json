@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Investigations/Obitayo/People/Andreas Olosegun Obitayo.md",
+                "file": "Templates/person.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Andreas Olosegun Obitayo"
+              "title": "person"
             }
           }
         ]
@@ -127,9 +127,12 @@
   },
   "active": "9324b14f2067ac00",
   "lastOpenFiles": [
+    "Social Media APIs/WeMe.md",
+    "Social Media APIs/Gapo.md",
+    "Social Media APIs/Gab.md",
+    "Investigations/Obitayo/People/Andreas Olosegun Obitayo.md",
     "Investigations/Obitayo/Locations",
     "Templates/person.md",
-    "Investigations/Obitayo/People/Andreas Olosegun Obitayo.md",
     "Investigations/Obitayo/People",
     "Investigations/Obitayo/Andreas Olusegun Obitayo.md",
     "Templates",
