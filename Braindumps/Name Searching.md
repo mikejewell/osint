@@ -1,0 +1,1 @@
+When searching for an MP from a different country, it'd be useful to have a way to find nicknames that are distinct to that language. For example, Francois might be shorted to Franck in French.
