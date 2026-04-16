@@ -128,6 +128,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -136,12 +137,16 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "templates:Insert template": false,
       "obsidian42-brat:BRAT": false,
-      "agent-client:Open agent client": false,
-      "bbawj-semantic-search:Semantic Search": false
+      "agent-client:Open agent client": false
     }
   },
   "active": "afbd4689d44aa6dc",
   "lastOpenFiles": [
+    "triage/triage/Szulkowska.md",
+    "triage/triage/Untitled.md",
+    "triage/triage/Welcome.md",
+    "triage/triage",
+    "triage",
     "Braindumps/Attitudes To The Missing.md",
     "Braindumps/Who Shares The Missing.md",
     "Social Media APIs/Facebook.md",
