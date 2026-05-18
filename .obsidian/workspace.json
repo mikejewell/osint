@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Braindumps/Name Searching.md",
+                "file": "triage/Craig Hamilton Ferguson.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Name Searching"
+              "title": "Craig Hamilton Ferguson"
             }
           }
         ]
@@ -142,6 +142,8 @@
   },
   "active": "afbd4689d44aa6dc",
   "lastOpenFiles": [
+    "Braindumps/Name Searching.md",
+    "triage/Craig Hamilton Ferguson.md",
     "triage/triage/Szulkowska.md",
     "triage/triage/Untitled.md",
     "triage/triage/Welcome.md",
@@ -150,7 +152,6 @@
     "Braindumps/Attitudes To The Missing.md",
     "Braindumps/Who Shares The Missing.md",
     "Social Media APIs/Facebook.md",
-    "Braindumps/Name Searching.md",
     "Repository Summary.md",
     "Braindumps",
     "input.csv",

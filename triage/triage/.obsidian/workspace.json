@@ -34,9 +34,21 @@
               "icon": "lucide-file",
               "title": "Szulkowska"
             }
+          },
+          {
+            "id": "6367119c475c247f",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.12.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.12.7"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "cd03593c1b21c0cc",
@@ -214,7 +226,7 @@
       "bases:Create new base": false
     }
   },
-  "active": "d100f53215a0409c",
+  "active": "6367119c475c247f",
   "lastOpenFiles": [
     "Welcome.md",
     "Szulkowska.md"
