@@ -1,6 +1,9 @@
+
 A few relevant FB links:
 - [https://www.facebook.com/help.find.craig.hamilton.ferguson](https://www.facebook.com/help.find.craig.hamilton.ferguson) - a few photos of the MP (appears to be run by Gavin)
 - [https://www.facebook.com/fergydj2021](https://www.facebook.com/fergydj2021) - Gavin’s FB page, with several posts about Craig.
+* https://www.facebook.com/groups/178027059359116/?multi_permalinks=2331736850654782&hoisted_section_header_type=recently_seen - posted after a suggestion that he could be in Manchester
+
 
 From Whitehaven, last seen South Shields
 DOB: 02/05/74
