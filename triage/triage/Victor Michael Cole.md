@@ -14,4 +14,4 @@ https://www.facebook.com/Hannah.Buchanan27
 
 Professor John Hinton: https://history.rcp.ac.uk/inspiring-physicians/john-mark-hinton (died 2016)
 
-Sister's husband (John Martin) died 
+Sister's husband (John Martin) died 2010: https://mh-v5.bournemouthecho.co.uk/notice/8756924.john-martin/ 
