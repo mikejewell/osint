@@ -39,12 +39,14 @@
             "id": "6367119c475c247f",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.12.7"
+                "file": "Victor Michael Cole.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.12.7"
+              "icon": "lucide-file",
+              "title": "Victor Michael Cole"
             }
           }
         ],
@@ -228,6 +230,7 @@
   },
   "active": "6367119c475c247f",
   "lastOpenFiles": [
+    "Victor Michael Cole.md",
     "Welcome.md",
     "Szulkowska.md"
   ]
