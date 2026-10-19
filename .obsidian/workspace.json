@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "triage/triage/Wendy Pollard.md",
+                "file": "file:/Users/moj/Downloads/missing-data-setup-review.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Wendy Pollard"
+              "title": "missing-data-setup-review"
             }
           }
         ]
@@ -135,7 +135,6 @@
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "command-palette:Open command palette": false,
-      "markdown-importer:Open format converter": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "templates:Insert template": false,
       "obsidian42-brat:BRAT": false,
