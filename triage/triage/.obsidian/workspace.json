@@ -62,9 +62,21 @@
               "icon": "lucide-file",
               "title": "Riccardo Branchini"
             }
+          },
+          {
+            "id": "98875a5635c1f4f4",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.14.5"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.14.5"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       },
       {
         "id": "cd03593c1b21c0cc",
@@ -244,7 +256,7 @@
       "bases:Create new base": false
     }
   },
-  "active": "12593b0292c74bba",
+  "active": "98875a5635c1f4f4",
   "lastOpenFiles": [
     "Wendy Pollard.md",
     "Untitled.md",
